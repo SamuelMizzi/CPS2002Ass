@@ -4,10 +4,16 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class TransactionManagerTest {
-
+	private TransactionManager instance;
+	
 	@Test
-	public void test() {
+	public void processTransactionTest() {	
 		
+	}
+	
+	@Test
+	public void setNumTransactionsProcessedTest(){
+
 	}
 
 }

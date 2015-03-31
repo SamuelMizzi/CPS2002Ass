@@ -33,7 +33,11 @@ public class TransactionTest {
 	
 	@Test
 	public void setAmountTest(){
-		
+		instance = new Transaction();
+		long expected = 10000;
+		instance.setAmount(expected);
+		long actual = instance.getAmount();
+		Assert.assertEquals(expected, actual);
 	}
 	
 
