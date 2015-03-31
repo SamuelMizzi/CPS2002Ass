@@ -19,8 +19,16 @@ public class TransactionTest {
 		int expected = 120;
 		instance.setSourceAccountNumber(expected);
 		int actual = instance.getSourceAccountNumber();
-		Assert.assertEquals(expected, actual);;
-		
+		Assert.assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void setDestinationSAccountNumberTest(){
+		instance = new Transaction();
+		int expected = 155;
+		instance.setDestinationAccountNumber(expected);
+		int actual = instance.getSourceAccountNumber();
+		Assert.assertEquals(expected, actual);
 	}
 
 }
