@@ -27,8 +27,14 @@ public class TransactionTest {
 		instance = new Transaction();
 		int expected = 155;
 		instance.setDestinationAccountNumber(expected);
-		int actual = instance.getSourceAccountNumber();
+		int actual = instance.getDestinationAccountNumber();
 		Assert.assertEquals(expected, actual);
 	}
+	
+	@Test
+	public void setAmountTest(){
+		
+	}
+	
 
 }

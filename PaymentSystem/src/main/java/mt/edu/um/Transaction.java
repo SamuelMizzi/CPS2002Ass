@@ -32,8 +32,16 @@ public class Transaction {
 		destinationAccountNumber = accNo;
 	}
 	
+	public int getDestinationAccountNumber(){
+		return destinationAccountNumber;
+	}
+	
 	public void setAmount(long amt){
 		amount = amt;
+	}
+	
+	public long getAmount(){
+		return amount;
 	}
 
 }
