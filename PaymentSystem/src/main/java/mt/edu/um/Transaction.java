@@ -1,14 +1,35 @@
 package mt.edu.um;
 
 public class Transaction {
-	
+
 	private int sourceAccountNumber;
-	private int	destinationAccountNumber;
+	private int destinationAccountNumber;
 	private long amount;
 	
-	public boolean process(){
-		return true;
+	public Transaction(){
+		
+	}
+
+	public Transaction(int src, int dst, long amt){
+		setSourceAccountNumber(src);
+		setDestinationAccountNumber(dst);
+		setAmount(amt);
 	}
 	
+	public boolean process() {
+		return true;
+	}
+
+	public void setSourceAccountNumber(int accNo) {
+		sourceAccountNumber = accNo;
+	}
+	
+	public void setDestinationAccountNumber(int accNo) {
+		destinationAccountNumber = accNo;
+	}
+	
+	public void setAmount(long amt){
+		amount = amt;
+	}
 
 }
