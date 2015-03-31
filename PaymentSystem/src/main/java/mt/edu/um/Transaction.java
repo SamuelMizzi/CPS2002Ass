@@ -24,6 +24,10 @@ public class Transaction {
 		sourceAccountNumber = accNo;
 	}
 	
+	public int getSourceAccountNumber(){
+		return sourceAccountNumber;
+	}
+	
 	public void setDestinationAccountNumber(int accNo) {
 		destinationAccountNumber = accNo;
 	}
